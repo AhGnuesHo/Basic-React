@@ -39,9 +39,7 @@ export default function Modal({ isShowModal, setIsShowModal }) {
       >
         <span
           id="closeModal"
-          onClick={() => {
-            return setIsShowModal(false);
-          }}
+          onClick={() => setIsShowModal(false)}
         >
           ❌
         </span>
