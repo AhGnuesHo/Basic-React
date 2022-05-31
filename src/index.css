@@ -1,13 +1,210 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+:root{
+  --yellow: rgb(239, 226, 161);
+  --darkgreen: RGB(55, 99, 48);
+  --beige: rgb(201, 187, 65);
+  --mustard: rgb(252, 219, 81);
+  --mustard: rgb(252, 219, 81);
+  --olive: rgb(94, 153, 1);
+  
+}
+#root{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+html, body {
+  color: #58666e;
+  background-color: var(--yellow);
+  height: 100%; 
+  font-family: 'Gaegu', cursive;
+}
+body::-webkit-scrollbar {
+  display: none;/*스크롤바 뒷 배경 색상*/
+}
+header {
+  margin: 3px;
+  position: relative;
+  height: 60px;
+  background-color: antiquewhite;
+  border: 5px solid green;
+}
+
+  #title{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: green;
+      font-size: large;
+      font-weight: 900;
+  }
+
+main {
+  height: calc(100% - 40px);
+  /*가로로 정렬, 부모의 넓이에 맞게 축소 (줄바꿈하지않음) */
+  display: flex;
+  flex-flow: row nowrap;
+}
+  aside {
+      margin: 3px;
+      border: 5px solid goldenrod;
+      width: 200px;
+      /* flex-shrink: 컨테이너의 크기를 0만큼 줄어들게 함 (줄어들지 않게 함)*/
+      flex-shrink: 0;
+      float: left;
+      display: flex;
+      flex-flow: column nowrap;
+  }
+      #addPlant{
+          margin: 3px;
+          color: green;
+          border-radius: 1ch;
+          border: 0ch;
+          background-color:goldenrod;
+          padding: 7px 10px;
+          cursor: pointer;
+      }
+      
+      #addPlant:hover{
+          background-color: green;
+          color : wheat
+      }
+
+      ul{
+          
+          padding: 10px;
+          list-style:none;
+      }
+          li{
+              padding: 10px;
+              color: green;
+              font-size: large;
+              font-weight: 400;
+          }
+
+  section {
+      margin: 3px;
+      border: 5px solid goldenrod;
+      display: flex;
+      flex-flow: row wrap;
+      flex: 1;
+      align-content: flex-start;
+      overflow-y: scroll;
+
+  }
+  section::-webkit-scrollbar{
+      display: none;
+  }
+      .card{
+          margin: 3px;
+          padding: 3px;
+          background-color: var(--darkgreen);
+          width: 200px;
+          display: flex;
+          flex-flow: row wrap;
+          border-radius: 10px;
+      }
+      .card img{
+          margin: 3px;
+          padding: 3px;
+          width: 150px;
+          height: 150px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .card span{
+          margin: 3px;
+          padding: 3px;
+      color: antiquewhite;
+          text-align: center;
+      }
+
+      .modal{
+          position: fixed; 
+          top: 0;
+          left: 0;
+          opacity: 0.9;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          background-color: #58666e;
+      
+      }
+          #closeModal {
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 10px 20px;
+              font-weight: 700;
+              font-size: 20px;
+              cursor: pointer;
+              z-index: 12;
+          }
+
+          .newPlantInfo{
+              padding: 20px;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              width: 400px;
+              border-radius: 1ch;
+              color:white;
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: center;
+              z-index: 11;
+              background-color:slateblue;
+          }
+
+          .label {
+              margin-bottom: 5px;
+              font-size: 20px;
+          }
+
+          .setPlant{
+              padding: 10px;
+              margin-bottom: 10px;
+              font-size: 18px;
+              outline: none;
+              border-radius: 1ch;
+              border: 2px solid rgb(252, 219, 81);
+              border-radius : 1ch;
+          }
+
+          #submutButton {
+              padding: 10px;
+              margin-bottom: 10px;
+              font-size: 18px;
+              outline: none;
+              border-radius: 1ch;
+              margin-top: 30px;
+              background-color: rgb(252, 219, 81);
+          }
+
+      
+
+@media (max-width: 1000px){
+  .card{
+      background: var(--olive);
+  }
+  .card span{
+      color:black;
+  }
+}
+
+@media (max-width: 700px){
+  .card{
+      background: var(--mustard);
+  }
+  .card span{
+      color:black;
+  }
 }

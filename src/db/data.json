@@ -1,0 +1,52 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "파키라",
+      "src": "https://cdn.pixabay.com/photo/2020/06/29/10/01/money-tree-5352199_1280.jpg",
+      "content": "미세먼지 제거 넘버원!"
+    },
+    {
+      "id": 2,
+      "name": "백양금",
+      "src": "https://cdn.pixabay.com/photo/2022/04/05/22/54/giant-lily-7114496_1280.jpg",
+      "content": "새집 증후군도 잡는!"
+    },
+    {
+      "id": 3,
+      "name": "맥시코소철",
+      "src": "https://cdn.pixabay.com/photo/2013/10/12/12/33/zamia-194408_1280.jpg",
+      "content": "미세먼지는 기본으로 인테리어에 좋은!!"
+    },
+    {
+      "id": 4,
+      "name": "박쥐란",
+      "src": "https://cdn.pixabay.com/photo/2020/02/02/09/32/platycerium-4812460_1280.jpg",
+      "content": "박쥐의 날개짓을 닮은!"
+    },
+    {
+      "id": 5,
+      "name": "율마",
+      "src": "https://w.namu.la/s/d8d5ee24691d92e358f969ade518ef382ff0f11f60cb20eedbf6f8b16e07e8fcbd1df0dbfc8775afae19089b581e0f90bd3a9f84d0e40df432a48a7e769ab25e9a26722ba9bf26698a7ce57f1a6c38b49f8b3dd38088254b4bacfa51722b9c34caaaa55e9fb4746110dd6d694f27e446",
+      "content": "작지만 강한!"
+    },
+    {
+      "name": "656456",
+      "src": "456456",
+      "content": "456456",
+      "id": 6
+    },
+    {
+      "name": "234234",
+      "src": "324234",
+      "content": "23423423423",
+      "id": 7
+    },
+    {
+      "name": "5645645",
+      "src": "6456456",
+      "content": "456456",
+      "id": 8
+    }
+  ]
+}
