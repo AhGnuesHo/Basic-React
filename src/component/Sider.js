@@ -7,6 +7,10 @@ export default function Sider() {
 
   const plants = useFetch("http://localhost:3001/plants"); 
 
+  const handleIsShowModal = (value) => {
+    setIsShowModal(value);
+  };
+
   return (
     <>
       <aside>
@@ -25,7 +29,7 @@ export default function Sider() {
         </ul>
       </aside>
       <Section/>
-      <Modal isShowModal={isShowModal} setIsShowModal={setIsShowModal} />
+      <Modal isShowModal={isShowModal} setIsShowModal={handleIsShowModal} />
     </>
   );
 }
