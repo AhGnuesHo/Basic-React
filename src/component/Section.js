@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import useFatch from "../hooks/useFatch";
+import useFetch from "../hooks/useFetch";
 export default function Section() {
 
-    const plants = useFatch("http://localhost:3001/plants");  
+    const plants = useFetch("http://localhost:3001/plants");  
 
   return (
 
