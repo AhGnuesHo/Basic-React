@@ -1,3 +1,3 @@
 # React Plant
 
-https://pn9pn6.csb.app/
+https://basic-react-seungha.netlify.app/
