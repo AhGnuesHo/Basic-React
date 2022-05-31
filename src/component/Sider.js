@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
-import useFatch from "../hooks/useFatch";
+import useFetch from "../hooks/useFetch";
 import Modal from "./Modal";
 import Section from './Section';
 export default function Sider() {
   const [isShowModal, setIsShowModal] = useState(false);
 
-  const plants = useFatch("http://localhost:3001/plants"); 
+  const plants = useFetch("http://localhost:3001/plants"); 
+
+  const handleIsShowModal = (value) => {
+    setIsShowModal(value);
+  };
 
   return (
     <>
@@ -25,7 +29,7 @@ export default function Sider() {
         </ul>
       </aside>
       <Section/>
-      <Modal isShowModal={isShowModal} setIsShowModal={setIsShowModal} />
+      <Modal isShowModal={isShowModal} setIsShowModal={handleIsShowModal} />
     </>
   );
 }
