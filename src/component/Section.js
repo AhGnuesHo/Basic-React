@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
-import useFetch from "../hooks/useFetch";
-export default function Section() {
 
-    const plants = useFetch("http://localhost:3001/plants");  
+export default function Section({items}) {
 
   return (
-
   <section>
-      {plants.map((plant) =>  (
-        <div className="card" key ={plant.id}>
+      {items.map((plant) =>  (
+        <div className="card" key ={plant.name}>
           <img src={plant.src} alt={plant.name} />
           <span>{plant.content}</span>
         </div>
