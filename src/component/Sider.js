@@ -7,14 +7,16 @@ export default function Sider() {
 
   const plants = useFetch("http://localhost:3001/plants"); 
 
+  const handleShowModal = (value) => {
+    setIsShowModal(value);
+  }
+
   return (
     <>
       <aside>
         <button
           id="addPlant"
-          onClick={() => {
-            return setIsShowModal(true);
-          }}
+          onClick={() => { setIsShowModal(true)}}
         >
           Add
         </button>
